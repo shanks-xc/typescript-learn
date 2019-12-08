@@ -53,4 +53,33 @@ function b(a: string, ...b: any[]) {
 
 b('1', 2, 3, 4, 5, 6)
 
-Math.pow(10)
+type name = string
+let aa: name = '1'
+
+type EventNames = 'CASH_PRODUCT' | 'YIBEI_PEODUCT'
+function handleEvent(ele: EventNames) {
+  console.log(ele)
+}
+handleEvent('CASH_PRODUCT')
+
+let arr3: [string, number] = ['1', 2]
+let arr11: number[] = [1]
+arr3.push(11)
+arr3.push('22')
+
+enum Days { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
+console.log(Days[0]) // Sun
+console.log(Days['Sun']) // 0
+enum Color { Red, Green, aa, Blue = "blue".length };
+
+enum Dayss { Sun = 7, Tue, Wed, Thu, Fri, Sat, Mon='11', };
+
+
+const enum Directions {
+  Up,
+  Down,
+  Left,
+  Right
+}
+
+let directions = [Directions.Up, Directions.Down, Directions.Left, Directions.Right];
